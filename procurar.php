@@ -85,7 +85,7 @@
 					}
 				});
 				
-				function refreshNumTweets(){
+				function refreshNumTweets(){ //atualiza o contador de tweets
 					$.ajax({
 						url: 'attntweets.php',
 						success: function(data){
@@ -95,7 +95,7 @@
 					});
 				}
 				
-				function refreshNumFollowers(){
+				function refreshNumFollowers(){ //atualiza o contador de seguidores
 					$.ajax({
 						url: 'attnfollowers.php',
 						success: function(data){
@@ -105,7 +105,7 @@
 					});
 				}
 
-				function refreshNumFollowing(){
+				function refreshNumFollowing(){ //atualiza o contador de usuários seguindo
 					$.ajax({
 						url: 'attnfollowing.php',
 						success: function(data){
@@ -148,7 +148,7 @@
 
 	    <div class="container">
 	    	
-	    	<div class="col-md-3">
+	    	<div class="col-md-3"> <!-- menu lateral esquerdo -->
 	    		<div class="panel panel-default">
 	    			<div class="panel-body"style="text-align: center">
 	    				<h4><?= $_SESSION['username']?></h4>
@@ -177,9 +177,9 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    	</div><!-- primeira col -->
+	    	</div>
 	    	
-	    	<div class="col-md-6">
+	    	<div class="col-md-6"> <!-- painel principal / timeline -->
 	    		<div class="panel panel-default">
 	    			<div class="panel-body">
 	    				<div class="input-group">
@@ -191,15 +191,15 @@
 	    		<div id="pessoas" class="list-group">
 	    			
 	    		</div>
-	    	</div><!-- segunda col -->
+	    	</div>
 	    	
-	    	<div class="col-md-3">
+	    	<div class="col-md-3"> <!-- menu lateral direito -->
 	    		<div class="panel panel-default">
 	    			<div class="panel-body">
 	    				
 	    			</div>
 	    		</div>
-	    	</div><!-- terceira col -->
+	    	</div>
 
 		</div>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -1,4 +1,5 @@
 <?php
+	//verifica se as variáveis foram inicializadas, caso positivo, atribuir valor do GET (tratativas de erro)
 	$usererror = isset($_GET['usererror']) ? $_GET['usererror'] : 0;
 	$emailerror = isset($_GET['emailerror']) ? $_GET['emailerror'] : 0;
 ?>

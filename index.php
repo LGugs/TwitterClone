@@ -1,4 +1,5 @@
 <?php
+	//verifica se as variáveis foram inicializadas, caso positivo, atribuir valor do GET (tratativas de erro)
 	$error = isset($_GET['error']) ? $_GET['error'] : 0;
 	$register = isset($_GET['register']) ? $_GET['register'] : 0;
 	$logout = isset($_GET['logout']) ? $_GET['logout'] : 0;
@@ -109,6 +110,7 @@
             				<strong>Cadastrado com sucesso! Faça login para utilizar o site.</strong>
 						</div>';
 			
+				//usuario desconectado
 				if($logout == 1)
 					echo '<div class="alert alert-info" role="alert">
             				<button type="button" class="close" data-dismiss="alert">
@@ -119,7 +121,7 @@
 			?>
 	      <div class="jumbotron">
 	        <h1>Bem vindo ao Twitter Clone</h1>
-	        <p>Aplicação clone do twitter desenvolvida por <a href="http://fb.com/GiovanniCFiori">Giovanni Fiori</a></p>
+	        <p>Aplicação clone do twitter desenvolvida por <a target="_blank" href="http://github.com/giovannifiori">Giovanni Fiori</a></p>
 			</div>	
       		
 	      <div class="clearfix"></div>
